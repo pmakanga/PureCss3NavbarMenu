@@ -1,0 +1,46 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: tahoma;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.main-menu .list-item:hover .drop-menu li {
+    display: block;
+}
+
+.main-menu .list-item:hover .menu-1 {
+    perspective: 1000px;
+}
+
+.main-menu .list-item:hover .drop-menu li {
+    display: block;
+}
+
+.main-menu .list-item:hover .menu-2 .drop-item:nth-child(2) {
+    perspective: 1000px;
+    animation-name: topToBottom;
+    animation-duration: 400ms;
+    animation-delay: -150ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
