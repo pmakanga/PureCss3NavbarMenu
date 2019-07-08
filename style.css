@@ -35,12 +35,167 @@ a {
     display: block;
 }
 
-.main-menu .list-item:hover .menu-2 .drop-item:nth-child(2) {
-    perspective: 1000px;
+.main-menu .list-item:hover .menu-2 .drop-item:nth-child(1) {
     animation-name: topToBottom;
     animation-duration: 400ms;
     animation-delay: -150ms;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
+
+.main-menu .list-item:hover .menu-2 .drop-item:nth-child(2) {
+    animation-name: topToBottom;
+    animation-duration: 400ms;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.main-menu .list-item:hover .menu-2 .drop-item:nth-child(3) {
+    animation-name: topToBottom;
+    animation-duration: 400ms;
+    animation-delay: 150ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.main-menu .list-item:hover .menu-2 .drop-item:nth-child(4) {
+    animation-name: topToBottom;
+    animation-duration: 400ms;
+    animation-delay: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.main-menu .list-item:hover .menu-4 {
+    perspective: 1000px;
+}
+
+.main-menu .list-item:hover .menu-4 .drop-menu {
+    opacity: 0;
+    transform-origin: top right;
+}
+
+.main-menu .list-item:hover .menu-4 .drop-item:nth-child(1) {
+    animation-name: bottomToTop;
+    animation-duration: 400ms;
+    animation-delay: -150ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.main-menu .list-item:hover .menu-4 .drop-item:nth-child(2) {
+    animation-name: bottomToTop;
+    animation-duration: 400ms;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.main-menu .list-item:hover .menu-4 .drop-item:nth-child(3) {
+    animation-name: bottomToTop;
+    animation-duration: 400ms;
+    animation-delay: 150ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.main-menu .list-item:hover .menu-4 .drop-item:nth-child(4) {
+    animation-name: bottomToTop;
+    animation-duration: 400ms;
+    animation-delay: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.main-menu .list-item:hover .home {
+    border-top: 5px solid #33758a;
+}
+
+.main-menu .list-item:hover .about {
+    border-top: 5px solid #33758a;
+}
+
+.main-menu .list-item:hover .widget {
+    border-top: 5px solid orange
+}
+
+.main-menu .list-item:hover .kabobs {
+    border-top: 5px solid deepskyblue
+}
+
+.main-menu .list-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    color: white;
+    cursor: unset;
+}
+
+.main-menu .list-item a:hover {
+    cursor: pointer
+}
+
+.main-menu .list-item a.home {
+    background: #f33;
+}
+
+.main-menu .list-item a.about {
+    background: #fc3;
+}
+
+.main-menu .list-item a.widget {
+    background: #55dde0;
+}
+
+.main-menu .list-item a.kabobs {
+    background: #97c;
+}
+
+.main-menu .list-item a.contact {
+    background: blue
+}
+
+.main-menu .list-item a i {
+    color: white;
+    font-size: 100px;
+}
+
+.main-menu .list-item a i {
+    color: white;
+    font-size: 100px;
+}
+
+.main-menu .list-item .drop-menu .drop-item{
+    display: none;
+}
+
+.main-menu .list-item .drop-menu .drop-item a{
+    height: 80px;
+    font: 300 22px "Arial", sans-serif;
+    text-transform: uppercase;
+}
+
+.main-menu .list-item .drop-menu .drop-item a.item-1{
+    background: #fc3;
+}
+
+.main-menu .list-item .drop-menu .drop-item a.item-2{
+    background: skyblue;
+}
+
+.main-menu .list-item .drop-menu .drop-item a.item-3{
+    background: #f33;
+}
+
+
+
+
+
+
+
+
+
 
