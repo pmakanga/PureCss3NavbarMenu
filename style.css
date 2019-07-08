@@ -67,6 +67,7 @@ a {
     animation-fill-mode: forwards;
 }
 
+
 .main-menu .list-item:hover .menu-4 {
     perspective: 1000px;
 }
@@ -113,15 +114,19 @@ a {
 }
 
 .main-menu .list-item:hover .about {
-    border-top: 5px solid #33758a;
+    border-top: 5px solid red;
 }
 
 .main-menu .list-item:hover .widget {
-    border-top: 5px solid orange
+    border-top: 5px solid #fc3
 }
 
 .main-menu .list-item:hover .kabobs {
     border-top: 5px solid deepskyblue
+}
+
+.main-menu .list-item:hover .contact {
+    border-top: 5px solid #97c;
 }
 
 .main-menu .list-item a {
@@ -188,6 +193,65 @@ a {
 
 .main-menu .list-item .drop-menu .drop-item a.item-3{
     background: #f33;
+}
+
+.main-menu .list-item .drop-menu .drop-item a.item1{
+    background: #fc3;
+}
+
+.main-menu .list-item .drop-menu .drop-item a.item2{
+    background: skyblue;
+}
+
+.main-menu .list-item .drop-menu .drop-item a.item3{
+    background: #f33;
+}
+
+@keyframes leftToRight {
+    0% {
+      opacity: 0;
+      transform: rotateY(-90deg) translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateY(0deg) translateY(0px);
+    }
+  }
+
+  @keyframes topToBottom {
+    0% {
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+  }
+
+  @keyframes itemBounce {
+    0% {
+        opacity:0;
+        transform:scale(0.3) translateY(-60px);
+    }
+    80% {
+        transform:scale(1.2) translateY(10px);
+    }
+    100% {
+        opacity:1;
+        transform:scale(1) translateY(0px);
+    }
+}
+
+@keyframes bottomToTop {
+    0% {
+        opacity:0;
+        transform:rotate(-30deg);
+    }
+    100% {
+        opacity:1;
+        transform:rotate(0deg);
+    }
 }
 
 
